@@ -36,4 +36,6 @@ angular.module('testApp', [])
     });
   };
 })
+.controller('ModalInstanceCtrl', function() {
+})
 ;
