@@ -28,13 +28,16 @@ angular.module('testApp', [])
         }
       }
     });
-
-    modalInstance.result.then(function (selectedItem) {
-      $scope.selected = selectedItem;
-    }, function() {
-      $log.info('Modal dismissed at: ' + new Date());
-    });
   };
+  
+  $scope.ok = function () {
+    $modalInstance.dismiss('cancel');
+  }
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  }
+
 })
 .controller('ModalInstanceCtrl', function() {
 })
