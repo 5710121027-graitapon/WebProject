@@ -56,12 +56,13 @@
 
 <h3>angular test {{ 3 + 4 }} = 7</h3>
 
-<div ng-include="carousel.html"></div>
+<div ng-include="testApp.html"></div>
 
 <script src="js/angular1.3.0.min.js"></script>
 <script src="js/ui-bootstrap-tpls-0.11.2.min.js"></script>
+<script src="testApp.js"></script>
 <script>
-angular.module('Apps', ['ui.bootstrap']);
+angular.module('Apps', ['ui.bootstrap', 'testApp']);
 </script>
 </body>
 </html>
