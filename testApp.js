@@ -12,7 +12,7 @@ angular.module('testApp', [])
 	{ image: '3787-11.jpg' }
 	];
 })
-.controller('ModalDemoCtrl', function ($scope, $modal, $log) {
+.controller('ModalDemoCtrl', function ($scope, $modal) {
 
   $scope.items = ['item1', 'item2', 'item3'];
 
@@ -30,6 +30,9 @@ angular.module('testApp', [])
     });
   };
   
+
+})
+.controller('ModalInstanceCtrl', function($scope, $modalInstance) {
   $scope.ok = function () {
     $modalInstance.dismiss('cancel');
   }
@@ -38,7 +41,5 @@ angular.module('testApp', [])
     $modalInstance.dismiss('cancel');
   }
 
-})
-.controller('ModalInstanceCtrl', function() {
 })
 ;
