@@ -31,7 +31,7 @@ angular.module('testApp', [])
 
     modalInstance.result.then(function (selectedItem) {
       $scope.selected = selectedItem;
-    }, function () {
+    }, function() {
       $log.info('Modal dismissed at: ' + new Date());
     });
   };
