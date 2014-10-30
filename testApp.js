@@ -16,11 +16,6 @@ angular.module('testApp', [])
 
   $scope.items = ['item1', 'item2', 'item3'];
 
-  $scope.imgs = [
-  { image: 'teacher_day.jpg' },
-  { image: 'กีฬาสัมพันธ์.jpg' },
-  { image: 'ปลูกป่า.jpg' }    
-  ];
 
   $scope.open = function (size) {
 
@@ -39,6 +34,12 @@ angular.module('testApp', [])
 
 })
 .controller('ModalInstanceCtrl', function($scope, $modalInstance) {
+  $scope.imgs = [
+  { image: 'teacher_day.jpg' },
+  { image: 'กีฬาสัมพันธ์.jpg' },
+  { image: 'ปลูกป่า.jpg' }    
+  ];
+
   $scope.ok = function () {
     $modalInstance.dismiss('cancel');
   }
