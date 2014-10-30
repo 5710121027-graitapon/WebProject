@@ -16,6 +16,12 @@ angular.module('testApp', [])
 
   $scope.items = ['item1', 'item2', 'item3'];
 
+  $scope.imgs = [
+  { image: 'teacher_day.jpg' },
+  { image: 'กีฬาสัมพันธ์.jpg' },
+  { image: 'ปลูกป่า.jpg' }    
+  ];
+
   $scope.open = function (size) {
 
     var modalInstance = $modal.open({

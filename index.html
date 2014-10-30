@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Web Project MIT 13</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="js/ui-bootstrap.css">
 </head>
 
@@ -60,7 +61,11 @@
             <h3 class="modal-title">Welcome to MIT13 @ PSU</h3>
         </div>
         <div class="modal-body">
-			<img src="promote/teacher_day.jpg" class="img-responsive">
+		  <carousel interval="2000">
+			<slide ng-repeat="i in imgs">
+			  <img src="promote/{{ i.image }}" class="img-responsive">
+			</slide>
+		  </carousel>
         </div>
         <div class="modal-footer">
             <button class="btn btn-primary" ng-click="ok()">OK</button>
@@ -68,7 +73,7 @@
         </div>
     </script>
 
-    <button class="btn btn-success" ng-click="open('lg')">Promotion !</button>
+    <div align="center"><button class="btn btn-success" ng-click="open('lg')"><i class="fa fa-camera fa-2x"></i> Delete</a> Promotion Updated !</button></div>
 </div>
 
 <div class="row">
