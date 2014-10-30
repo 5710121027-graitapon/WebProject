@@ -12,10 +12,17 @@ angular.module('testApp', [])
 	{ image: '3787-11.jpg' }
 	];
 })
-.controller('ModalDemoCtrl', function ($scope, $modal) {
+.controller('ModalDemoCtrl', function ($scope, $rootScope, $modal) {
 
-  $scope.items = ['item1', 'item2', 'item3'];
+//  $scope.items = ['item1', 'item2', 'item3'];
 
+  $rootScope.imgs = [
+  { image: 'teacher_day.jpg' },
+  { image: 'กีฬาสัมพันธ์.jpg' },
+  { image: 'ปลูกป่า.jpg' }    
+  ];
+
+//	$scope.items = $scope.imgs;
 
   $scope.open = function (size) {
 
@@ -33,13 +40,9 @@ angular.module('testApp', [])
   
 
 })
-.controller('ModalInstanceCtrl', function($scope, $modalInstance) {
-  $scope.imgs = [
-  { image: 'teacher_day.jpg' },
-  { image: 'กีฬาสัมพันธ์.jpg' },
-  { image: 'ปลูกป่า.jpg' }    
-  ];
+.controller('ModalInstanceCtrl', function($scope, $modalInstance, items) {
 
+ 
   $scope.ok = function () {
     $modalInstance.dismiss('cancel');
   }

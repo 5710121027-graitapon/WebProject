@@ -61,11 +61,13 @@
             <h3 class="modal-title">Welcome to MIT13 @ PSU</h3>
         </div>
         <div class="modal-body">
+		
 		  <carousel interval="2000">
 			<slide ng-repeat="i in imgs">
 			  <img src="promote/{{ i.image }}" class="img-responsive">
 			</slide>
 		  </carousel>
+		  
         </div>
         <div class="modal-footer">
             <button class="btn btn-primary" ng-click="ok()">OK</button>
