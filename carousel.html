@@ -2,8 +2,8 @@
 
     <div ng-controller="CarouselDemoCtrl">
       <carousel interval="myInterval">
-        <slide ng-repeat="slide in slides" active="slide.active">
-          <img src="pic/{{slide.image}}" class="img-responsive" style="margin:auto;">
+        <slide ng-repeat="i in imgs" active="slide.active">
+          <img src="promote/{{i.image}}" class="img-responsive" style="margin:auto;">
         </slide>
       </carousel>
     </div>

@@ -3,7 +3,7 @@ angular.module('testApp', [])
 	
 	
 	$scope.myInterval = 5000;
-	$scope.slides = [
+	$scope.imgs = [
 	  { image: 'teacher_day.jpg' },
 	  { image: 'กีฬาสัมพันธ์.jpg' },
 	  { image: 'ปลูกป่า.jpg' }    
@@ -12,10 +12,7 @@ angular.module('testApp', [])
 .controller('ModalDemoCtrl', function ($scope, $rootScope, $modal) {
 
 
-  $rootScope.imgs = [
-  ];
-
-
+ 
   $scope.open = function (size) {
 
     var modalInstance = $modal.open({
