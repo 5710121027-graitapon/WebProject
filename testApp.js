@@ -4,17 +4,15 @@ angular.module('testApp', [])
 	
 	$scope.myInterval = 5000;
 	$scope.slides = [
-	{ image: '3778-11.jpg' },
-	{ image: '3787-11.jpg' }
+	  { image: 'teacher_day.jpg' },
+	  { image: 'กีฬาสัมพันธ์.jpg' },
+	  { image: 'ปลูกป่า.jpg' }    
 	];
 })
 .controller('ModalDemoCtrl', function ($scope, $rootScope, $modal) {
 
 
   $rootScope.imgs = [
-  { image: 'teacher_day.jpg' },
-  { image: 'กีฬาสัมพันธ์.jpg' },
-  { image: 'ปลูกป่า.jpg' }    
   ];
 
 
