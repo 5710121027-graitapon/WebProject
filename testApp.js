@@ -1,12 +1,8 @@
 angular.module('testApp', [])
 .controller('CarouselDemoCtrl', function($scope) {
 	
-	$scope.data = [
-	{ image: '3778-11.jpg' },
-	{ image: '3787-11.jpg' }
-	];
 	
-	$scope.myInterval = 2000;
+	$scope.myInterval = 5000;
 	$scope.slides = [
 	{ image: '3778-11.jpg' },
 	{ image: '3787-11.jpg' }
@@ -14,7 +10,6 @@ angular.module('testApp', [])
 })
 .controller('ModalDemoCtrl', function ($scope, $rootScope, $modal) {
 
-//  $scope.items = ['item1', 'item2', 'item3'];
 
   $rootScope.imgs = [
   { image: 'teacher_day.jpg' },
@@ -22,7 +17,6 @@ angular.module('testApp', [])
   { image: 'ปลูกป่า.jpg' }    
   ];
 
-//	$scope.items = $scope.imgs;
 
   $scope.open = function (size) {
 
