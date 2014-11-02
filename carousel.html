@@ -1,2 +1,10 @@
 <!-- carousel -->
 
+    <div ng-controller="CarouselDemoCtrl">
+      <li ng-repeat="d in data">{{ $index+1 }} {{ d.image }}</li>
+      <carousel interval="myInterval">
+        <slide ng-repeat="slide in slides" active="slide.active">
+          <img src="pic/{{slide.image}}" class="img-responsive" style="margin:auto;">
+        </slide>
+      </carousel>
+    </div>
