@@ -18,7 +18,7 @@ body {
 
 body {
 	/*background-color:#FF9;*/
-	background:url(pic/3778-11.jpg) no-repeat center center fixed; 
+/*	background:url(pic/3778-11.jpg) no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -28,7 +28,9 @@ body {
 	background-color:rgba(255,204,51,0.5);
 	
 }
-
+#sidemenu {
+	background-color:rgba(
+}
 #body1 {
 	background-color:rgba(255,204,51,0.5);
 }
