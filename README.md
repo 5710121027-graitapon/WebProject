@@ -6,6 +6,6 @@ lucky for ppom
 hello from kitisak
 hello from pruek
 
-<a href="http://5710121027-graitapon.github.io/WebProject/" target="_blank">Demo</a>
+<a href="http://graitapon.github.io/WebProject/" target="_blank">Demo</a>
 
 Add Pic for Promote
